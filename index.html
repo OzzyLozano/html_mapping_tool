@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trazador de Rutas de Transporte Público</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- llave api google maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXf6oBvxSVe1QmheS-qpou8INPAkfX9CY&callback=initMap" async defer></script>
+</head>
+<body>
+
+  <div id="welcome">
+    <h1>ponganse a chambear xd</h1>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="controls">
+    <div class="instructions">
+      <div>
+        <h2>Selecciona una ciudad y tracemos rutas:D:</h2>
+      </div>
+      <div>
+        <select id="citySelect">
+          <!-- Agrega más opciones según las ciudades que desees incluir -->
+        </select>
+        <button id="traceRouteBtn" onclick="trazarRuta()">Trazar Ruta</button>
+      </div>
+    </div>
+
+    <div id="routeInfo" style="display: none;">
+      <h2>Información de la Ruta</h2>
+      <div>
+        <label for="routeName">Nombre:</label>
+        <input type="text" id="routeName">
+      </div>
+      <div>
+        <label for="routeColor">Color:</label>
+        <input type="text" id="routeColor">
+      </div>
+      <div>
+        <label for="routeSchedule">Horario:</label>
+        <input type="text" id="routeSchedule">
+      </div>
+      <div>
+        <button id="confirmRouteBtn" onclick="confirmarRuta()">Confirmar Ruta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

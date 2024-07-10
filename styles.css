@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+h2 {
+  text-align: center;
+  font-size: 3vh;
+  cursor: default!important;
+}
+
+#welcome {
+  align-content: center;
+  height: 6.5vh;
+}
+
+#map {
+  height: 70vh; /* Ajusta la altura del mapa en proporcion a la altura */
+}
+
+.instructions {
+  display: grid;
+  height: 16vh;
+  justify-items: center;
+  align-content: space-around;
+  align-items: center;
+}
+
+#controls {
+  padding: 1vh;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+}
+
+#citySelect {
+  outline: none;
+  padding: 1vh;
+  font-size: 2vh;
+  border-radius: 1vh;
+  width: 20vw;
+  background-color: white;
+  appearance: none; /* Ocultar la flecha del select en algunos navegadores */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Estilos para el hover y el focus del selector de ciudades */
+#citySelect:hover {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+  transition: box-shadow .15s ease-out, opacity .15s ease-out;
+}
+
+/* Estilos para las opciones dentro del selector */
+#citySelect option {
+  padding: 10px;
+}
+
+/* Estilos para el botón de trazar rutas */
+#traceRouteBtn {
+  padding: 1vh 2vw;
+  font-size: 2vh;
+  border: none;
+  border-radius: 1vh;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+#traceRouteBtn:hover {
+  background-color: #0056b3;
+  transition: background-color 0.15s ease-out;
+}
+
+/* Estilos para la cruz en el centro del mapa */
+.showCross > #map > div {
+  display: block !important;
+}
+
+/* Estilos para la información de la ruta */
+#routeInfo {
+  height: 25vh;
+  justify-items: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos generales para los inputs */
+input[type="text"] {
+  padding: 0.5vh 1vw;
+  font-size: 2vh;
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  width: 30vw;
+  background-color: #f9f9f9;
+}
+label {
+  display: inline-block;
+  width: 15vw;
+}
+
+/* Estilos para los botones */
+button {
+  padding: 1vh 2vw;
+  font-size: 2vh;
+  border: none;
+  border-radius: 1vh;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transition: background-color 0.15s ease-out;
+}
